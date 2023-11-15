@@ -33,22 +33,33 @@ const Navbar = () => {
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
-            <li key={link.id} className={'${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer'} onClick={() => setActive(link.title)}>
-              <a href={'#${link.id}'}>{link.title}</a>
+          {navLinks.map((nav) => (
+            <li 
+              key={nav.id}
+              className={'${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer'}
+              onClick={() => setActive(nav.title)}>
+              <a href={'#${nav.id}'}>{nav.title}</a>
             </li>
             ))}
         </ul>
 
         <div className="sm:hidden flex items-center flex-1 justify-end items-center">
-          <img src={toggle ? close : menu} alt="menu" className="w-[28px] h-[28px] cursor-pointer object-contain" onClick={() => setToggle(!toggle)} />
-          <div className={`${toggle ? "flex" : "hidden"} absolute top-20 right-0 black-gradient p-6 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>
+          <img 
+            src={toggle ? close : menu} 
+            alt="menu" 
+            className="w-[28px] h-[28px] cursor-pointer object-contain" 
+            onClick={() => setToggle(!toggle)} 
+            />
+          <div 
+          className={`${toggle ? "flex" : "hidden"} absolute top-20 right-0 black-gradient p-6 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>
           <ul className="list-none flex justify-end items-start flex-col gap-4">
-          {navLinks.map((link) => (
-            <li key={link.id} className={'${active === link.title ? "text-white" : "text-secondary"} text-[16px] font-medium cursor-pointer font-poppins'} onClick={() => {
-              setActive(link.title) 
+          {navLinks.map((nav) => (
+            <li 
+            key={nav.id} 
+            className={'${active === nav.title ? "text-white" : "text-secondary"} text-[16px] font-medium cursor-pointer font-poppins'} onClick={() => {
+              setActive(nav.title) 
               setToggle(!toggle) }}>
-              <a href={'#${link.id}'}>{link.title}</a>
+              <a href={'#${nav.id}'}>{nav.title}</a>
             </li>
             ))}
         </ul>

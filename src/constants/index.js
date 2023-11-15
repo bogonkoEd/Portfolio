@@ -30,8 +30,8 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -157,97 +157,29 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
   const projects = [
     {
-      name: "Car Rent",
+      label: "Personal Portfolio Website",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+        "Developed a personal portfolio website to showcase my skills and projects, featuring interactive UI components and responsive design. Integrated Three.js for 3D graphics and WebGL elements.",
+      image: carrent, // Replace with actual image import
+      source_code_link: "https://github.com/bogonkoEd/Portfolio",
     },
     {
-      name: "Job IT",
+      label: "LaundryConnect",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+        "Created a laundry management system with an online booking feature and a user-friendly interface. Implemented a secure payment gateway, enhancing transaction efficiency and success rate.",
+      image: jobit, // Replace with actual image import
+      source_code_link: "https://github.com/bogonkoEd/LaundryConnect",
     },
     {
-      name: "Trip Guide",
+      label: "Blockchain Covid Vaccine Certifications",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+        "Developed a blockchain-based system for COVID-19 vaccine certifications to ensure trust in the vaccine supply chain. Deployed on the Rinkeby testnet.",
+      image: tripguide, // Replace with actual image import
+      source_code_link: "https://github.com/githubarj/Blockchain-Covid-Certificates",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  
+  export { services, technologies, experiences, projects };
