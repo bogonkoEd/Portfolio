@@ -27,6 +27,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check [iss
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
-Eddy Bogonko - [Your Contact Information]
+Eddy Bogonko -[eddy._bogonko@outlook.com](eddy._bogonko@outlook.com)
 
 Project Link: [https://github.com/bogonkoEd/Portfolio](https://github.com/bogonkoEd/Portfolio)
