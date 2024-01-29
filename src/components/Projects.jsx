@@ -23,7 +23,7 @@ const ProjectCard = ({ index, label, description, image, source_code_link }) => 
           <img
             src={image}
             alt='project'
-            className="w-full h-full object-cover rounded-2xl"
+            className="h-full w-full object-contain rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div

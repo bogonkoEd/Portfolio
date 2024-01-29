@@ -12,14 +12,14 @@ const Experience = () => {
   return (
     <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>What I Have done so far</p>
-      <h2 className={styles.sectionHeadText}>Skills Experience</h2>
+      <h2 className={styles.sectionHeadText} >Experience</h2>
 
       <VerticalTimeline>
         {experiences.map((experience) => (
           <VerticalTimelineElement
             key={experience.id}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: '#1d1836', color: '#fff' }}
+            contentStyle={{ background: '#cfcfff', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid #232631' }}
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
@@ -27,12 +27,12 @@ const Experience = () => {
               <img
                 src={experience.icon}
                 alt={experience.company_name}
-                className="w-[50px] h-[50px] object-contain rounded-full shadow-xl  p-2 bg-white bg-opacity-10 mb-3 "
+                className="w-suto h-auto object-cover rounded-full shadow-xl  p-2 bg-white bg-opacity-10 mb-3 "
               />
             }  
 
           >
-            <h3 className="text-[24px] font-bold">
+            <h3 className="text-[24px] font-bold text-purple-800">
               {experience.title}
             </h3>
             <h4 className="text-secondary text-[16px] font-semibold">

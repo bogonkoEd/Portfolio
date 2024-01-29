@@ -16,7 +16,7 @@ const ServiceCard = ({ index, title, icon }) => {
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-purple-200 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-20 h-20 object-contain" />
           <h3 className="mt-4 mb-2 text-xl font-bold text-center">{title}</h3>
@@ -29,12 +29,11 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Intro</p>
+      <motion.div variants={textVariant()} >
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className="text-lg">
         As a Full Stack and Mobile App Developer with a strong foundation in
         Computer Science, I am currently enrolled at Strathmore
         University, where I am pursuing a Bachelor&apos;s Degree in Computer Science.

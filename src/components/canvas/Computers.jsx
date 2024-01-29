@@ -10,7 +10,7 @@ const Computers = ( isMobile ) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
   return (
     <mesh>
-      <hemisphereLight  intensity={1.35} groundColor="black" color={'#c010c0'} />
+      <hemisphereLight  intensity={1.35} groundColor="black" color={'#e4a0c0'} />
       <pointLight intensity={3} position={[0,-2,-0.5]} />
       <spotLight 
         position={[-1, 0, 0]}
@@ -18,20 +18,19 @@ const Computers = ( isMobile ) => {
         penumbra={1}
         intensity={2}
         castShadow
-        shadow-mapSize={1024}
-        
+        shadow-mapSize={1024}        
         />
       <primitive 
         object={computer.scene}
-        scale={isMobile ? 0.6 : 0.75}
-        position={isMobile ? [0, -3, -2.2] :[0,-3.25,-1.5]}
-        rotation={[-0.01,-0.2,-0.1]} />
+        scale={isMobile ? 0.79 : 0.45}
+        position={isMobile ? [0, -1.5, 0] :[0,-3.25,-1.5]}
+        rotation={[0.35,1.25,0]} />
     </mesh>
   )
 }
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(true)
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 500px)')
@@ -53,7 +52,8 @@ const ComputersCanvas = () => {
     <Canvas 
       frameloop='demand'
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+
+      camera={{ position: [15, 5, 5], fov: 30 }}
       gl={{ preserveDrawingBuffer: true}}
       >
       <Suspense fallback={<Loader />}>

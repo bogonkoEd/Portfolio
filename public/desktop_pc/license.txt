@@ -1,11 +1,11 @@
 Model Information:
-* title:	Gaming Desktop PC
-* source:	https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11aeb28787b66
-* author:	Yolala1232 (https://sketchfab.com/Yolala1232)
+* title:	Spider Drone 3D Model
+* source:	https://sketchfab.com/3d-models/spider-drone-3d-model-9a8aaad68a54456da8d730a403d4f202
+* author:	Dinendra Neyo (https://sketchfab.com/NeyoZ)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Gaming Desktop PC" (https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11aeb28787b66) by Yolala1232 (https://sketchfab.com/Yolala1232) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Spider Drone 3D Model" (https://sketchfab.com/3d-models/spider-drone-3d-model-9a8aaad68a54456da8d730a403d4f202) by Dinendra Neyo (https://sketchfab.com/NeyoZ) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
